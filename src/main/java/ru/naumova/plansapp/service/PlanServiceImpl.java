@@ -13,7 +13,7 @@ public class PlanServiceImpl implements PlanService {
     private PlanDAO planDAO;
 
     @Autowired
-    public void setPlanDAO(PlanDAO planDAO) {
+    public PlanServiceImpl(PlanDAO planDAO) {
         this.planDAO = planDAO;
     }
 
